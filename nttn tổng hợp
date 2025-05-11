@@ -69,16 +69,12 @@ getgenv().Version = "V2"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
   end
      })   AddButton(Tab1o, {
-     Name = "hiru v1",
+     Name = "hiru hub",
     Callback = function()
+getgenv().DuyKiddoDevTeam = true
 getgenv().Team = "Pirates"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHub.lua"))()
-  end
-     })   AddButton(Tab1o, {
-     Name = "hiru v2",
-    Callback = function()
-getgenv().Team = "Pirates"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubVeriV2.lua"))()
+getgenv().Chat = "Hiru Hub On Top"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
   end
      })   AddButton(Tab1o, {
      Name = "maru fake by kimp",
@@ -568,5 +564,31 @@ getgenv().Setting = {
 };
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+  end
+    })
+
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script find fruit"})
+     
+    
+------- BUTTON
+    
+        AddButton(Tab1o, {
+     Name = "find fruit hiru hub",
+    Callback = function()
+getgenv().Team = "Pirates"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/FindFruit.lua"))()
+  end
+    })        AddButton(Tab1o, {
+     Name = "find fruit blue hub",
+    Callback = function()
+getgenv().Config = {
+    ["Misc"] = {
+        ["RandomFruits"] = true,
+        ["BlackScreen"] = false,
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))()
   end
     })
