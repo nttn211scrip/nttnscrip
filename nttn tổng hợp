@@ -575,13 +575,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScrip
 ------- BUTTON
     
         AddButton(Tab1o, {
-     Name = "find fruit hiru hub",
+     Name = "hiru hub",
     Callback = function()
 getgenv().Team = "Pirates"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/FindFruit.lua"))()
   end
     })        AddButton(Tab1o, {
-     Name = "find fruit blue hub",
+     Name = "blue hub",
     Callback = function()
 getgenv().Config = {
     ["Misc"] = {
@@ -590,5 +590,13 @@ getgenv().Config = {
     }
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))()
+  end
+    })        AddButton(Tab1o, {
+     Name = "raito hub",
+    Callback = function()
+ServerHopTimer = 5
+TeleportSafe = true
+Webhook = "Your Webhook Here"
+_G.Version="Fruit Farm"loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
   end
     })
