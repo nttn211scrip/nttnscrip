@@ -310,7 +310,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RealMatsune/Rolls-Roc
 ------- BUTTON
     
         AddButton(Tab1o, {
-     Name = "xero kaitun",
+     Name = "xero kaitun(getkey)",
     Callback = function()
 	 -- Max level, godhuman, cdk, sgt
 getgenv().Shutdown = true -- Turn on if u are farming bulk accounts
@@ -536,4 +536,27 @@ getgenv().ConfigsKaitun = {
 }
 loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
   end
-     })
+     })  AddButton(Tab1o, {
+     Name = "kaitun mukuro hub(getkey)",
+    Callback = function()
+getgenv().Mode = "OneClick"
+getgenv().Setting = {
+    ["Team"] = "Marines", -- Options "Pirates", "Marines"
+    ["FucusOnLevel"] = true,
+    ["Fruits"] = {  -- setting for fruits u want
+        ["Primary"] = { -- if current fruit is not in this list, eat/buy
+            "Dragon-Dragon",
+            -- u can configs add mores/remove and must end with , (comma symbol)
+        },
+        ["Normal"] = { -- it just a normal fruit list
+            "Dragon-Dragon",
+            -- u can configs add mores/remove and must end with , (comma symbol)
+        }
+        -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
+    },
+    ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
+};
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+  end
+    })
