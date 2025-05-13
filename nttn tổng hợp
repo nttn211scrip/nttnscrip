@@ -69,7 +69,7 @@ getgenv().Version = "V2"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
   end
      })   AddButton(Tab1o, {
-     Name = "hiru hub",
+     Name = "hiru",
     Callback = function()
 getgenv().DuyKiddoDevTeam = true
 getgenv().Team = "Pirates"
@@ -77,12 +77,12 @@ getgenv().Chat = "Hiru Hub On Top"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
   end
      })   AddButton(Tab1o, {
-     Name = "maru fake by kimp",
+     Name = "maru fake (by kimp)",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/refs/heads/main/Bap(Beta)"))()
   end
      })  AddButton(Tab1o, {
-     Name = "bnana fake by kimp",
+     Name = "bnana fake (by kimp)",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kimprobloxdz/Banana-Free/refs/heads/main/Protected_5609200582002947.lua.txt"))()
   end
@@ -97,7 +97,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
   end
     })  AddButton(Tab1o, {
-     Name = "astral up v4",
+     Name = "astral hub(up v4)",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
   end
@@ -113,9 +113,17 @@ getgenv().Team = "Pirates"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RealMatsune/Rolls-Rocye/refs/heads/main/Loading.lua"))()
   end
      })  AddButton(Tab1o, {
-     Name = "bnana fake by tuan anh ios",
+     Name = "bnana fake (by tuan anh ios)",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/Banana-Hub/refs/heads/main/Banana-Free.lua"))()
+  end
+     })  AddButton(Tab1o, {
+     Name = "xero hub",
+    Callback = function()
+getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
   end
      })
 
@@ -127,26 +135,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/Banan
 ------- BUTTON
     
         AddButton(Tab1o, {
-     Name = "rip indra( đang lỗi)",
+     Name = "teddy hop boss",
     Callback = function()
-	 getgenv().Mode = "rip_indra" -- rip_indra, Dough King, Pull Lever, TOTS, Darkbeard
-getgenv().Team = "Marines"
-repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0952c4a5f3db9e01f4dbd099c1f9b3c.lua"))()
+	 repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
   end
-    })  AddButton(Tab1o, {
-     Name = "dough king(đang lỗi)",
-    Callback = function()
-getgenv().Mode = "Dough King" -- rip_indra, Dough King, Pull Lever, TOTS, Darkbeard
-getgenv().Team = "Marines"
-repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f0952c4a5f3db9e01f4dbd099c1f9b3c.lua"))()
-  end
-     })  AddButton(Tab1o, {
-     Name = "râu đen(đang lỗi)",
-    Callback = function()
-  end
-     })
+     }) 
 
       
 ------ Tab
@@ -316,7 +310,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RealMatsune/Rolls-Roc
 ------- BUTTON
     
         AddButton(Tab1o, {
-     Name = "xero kaitun(get key)",
+     Name = "xero kaitun",
     Callback = function()
 	 -- Max level, godhuman, cdk, sgt
 getgenv().Shutdown = true -- Turn on if u are farming bulk accounts
@@ -542,61 +536,4 @@ getgenv().ConfigsKaitun = {
 }
 loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
   end
-     })  AddButton(Tab1o, {
-     Name = "kaitun mukuro hub(get key)",
-    Callback = function()
-getgenv().Mode = "OneClick"
-getgenv().Setting = {
-    ["Team"] = "Marines", -- Options "Pirates", "Marines"
-    ["FucusOnLevel"] = true,
-    ["Fruits"] = {  -- setting for fruits u want
-        ["Primary"] = { -- if current fruit is not in this list, eat/buy
-            "Dragon-Dragon",
-            -- u can configs add mores/remove and must end with , (comma symbol)
-        },
-        ["Normal"] = { -- it just a normal fruit list
-            "Dragon-Dragon",
-            -- u can configs add mores/remove and must end with , (comma symbol)
-        }
-        -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
-    },
-    ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
-};
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
-  end
-    })
-
-      
------- Tab
-     local Tab1o = MakeTab({Name = "Script find fruit"})
-     
-    
-------- BUTTON
-    
-        AddButton(Tab1o, {
-     Name = "hiru hub",
-    Callback = function()
-getgenv().Team = "Pirates"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/FindFruit.lua"))()
-  end
-    })        AddButton(Tab1o, {
-     Name = "blue hub",
-    Callback = function()
-getgenv().Config = {
-    ["Misc"] = {
-        ["RandomFruits"] = true,
-        ["BlackScreen"] = false,
-    }
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))()
-  end
-    })        AddButton(Tab1o, {
-     Name = "raito hub",
-    Callback = function()
-ServerHopTimer = 5
-TeleportSafe = true
-Webhook = "Your Webhook Here"
-_G.Version="Fruit Farm"loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
-  end
-    })
+     })
